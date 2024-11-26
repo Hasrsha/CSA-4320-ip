@@ -1,0 +1,116 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a nice background and text color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5; /* Light background color */
+    color: #333;
+    padding: 20px;
+}
+
+/* Container for centering the form */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 2rem;
+    color: #2c3e50; /* Dark grey color */
+    margin-bottom: 20px;
+}
+
+/* Form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Input styling */
+input[type="text"], input[type="password"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    background-color: #3498db; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+button:active {
+    background-color: #2471a3; /* Even darker blue when clicked */
+}
+
+/* Link styling for "Back to Home" */
+p {
+    margin-top: 20px; /* Add space between the form and the link */
+}
+
+p a {
+    text-decoration: none;
+    color: #3498db; /* Blue color for the link */
+    font-size: 1rem;
+    transition: color 0.3s;
+    border-bottom: 2px solid transparent; /* Invisible underline by default */
+}
+
+p a:hover {
+    color: #2980b9; /* Darker blue when hovering */
+    border-bottom: 2px solid #2980b9; /* Blue underline effect on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
