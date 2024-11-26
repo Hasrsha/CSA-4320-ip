@@ -1,0 +1,95 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #e8f5e9; /* Soft green background */
+    color: #2e7d32; /* Dark green for text */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5rem;
+    color: #1b5e20; /* Deep green for headings */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2e7d32; /* Slightly lighter green for subheadings */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Module List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+ul li {
+    margin: 15px 0; /* Add spacing between items */
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff; /* White text for contrast */
+    background-color: #43a047; /* Vibrant green for module links */
+    border-radius: 8px; /* More rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+ul li a:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Logout Button */
+a[href="logout.php"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff; /* White text for contrast */
+    background-color: #e53935; /* Vibrant red for logout button */
+    border-radius: 8px; /* More rounded corners */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a[href="logout.php"]:hover {
+    background-color: #c62828; /* Darker red on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    ul li a {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
