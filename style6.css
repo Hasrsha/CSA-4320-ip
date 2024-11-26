@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f9f9f9; /* Light gray */
+    color: #333; /* Neutral dark text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #4caf50; /* Green */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 4px solid #388e3c; /* Darker green accent */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+header .logout-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+header .logout-button:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+/* Section Styling */
+section {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #4caf50; /* Green */
+    margin-bottom: 20px;
+}
+
+/* Module List Styling */
+.module-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.module-list li {
+    background-color: #e8f5e9; /* Light green */
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.module-list li a {
+    text-decoration: none;
+    color: #388e3c; /* Dark green */
+}
+
+.module-list li:hover {
+    background-color: #4caf50; /* Green */
+    color: white;
+    transform: scale(1.05);
+}
+
+.module-list li a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+    }
+
+    .module-list li {
+        font-size: 1rem;
+    }
+}
